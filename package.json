@@ -1,0 +1,26 @@
+{
+  "name": "ExpenseTracker",
+  "version": "1.0.0",
+  "dependencies": {
+    "@sap/cds": "^9"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2.4.1"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "private": true,  
+  "cds": {
+    "requires": {
+      "db": {
+        "[development]": {
+          "kind": "sqlite",
+          "credentials": {
+            "url": "db.sqlite"
+          }
+        }
+      }
+    }
+  }
+}

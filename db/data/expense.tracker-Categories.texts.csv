@@ -1,0 +1,31 @@
+ID,locale,name,description
+0d87e9e6-9de2-4c76-b9c2-8fc6b582d8a1,en,Food & Groceries,Food and everyday grocery expenses
+0d87e9e6-9de2-4c76-b9c2-8fc6b582d8a1,de,Lebensmittel,Lebensmittel und tägliche Einkäufe
+bc4a21e7-47fe-4b52-8f6e-2ce1cfe7d114,en,Rent & Housing,Rent and housing related expenses
+bc4a21e7-47fe-4b52-8f6e-2ce1cfe7d114,de,Miete & Wohnen,Miete und wohnungsbezogene Ausgaben
+6e9f63f3-d94f-4729-8e4b-f2391f52f616,en,Transportation,Public transport fuel and travel expenses
+6e9f63f3-d94f-4729-8e4b-f2391f52f616,de,Transport,Öffentliche Verkehrsmittel Kraftstoff und Fahrtkosten
+e07a1b58-62fb-4a68-9a71-dedfe92ced31,en,Utilities,Electricity internet phone and household utilities
+e07a1b58-62fb-4a68-9a71-dedfe92ced31,de,Nebenkosten,Strom Internet Telefon und weitere Haushaltskosten
+2a89b2bc-0d7b-4396-a473-24d324509458,en,Health,Medical pharmacy and healthcare expenses
+2a89b2bc-0d7b-4396-a473-24d324509458,de,Gesundheit,Arzt Apotheke und Gesundheitskosten
+4cc3b06a-e853-43aa-a3f7-d6e1c1775b64,en,Shopping,Clothing electronics and general shopping expenses
+4cc3b06a-e853-43aa-a3f7-d6e1c1775b64,de,Einkaufen,Kleidung Elektronik und allgemeine Einkäufe
+8b1eb39a-83d8-47ec-9e51-f3987a8a2f4c,en,Entertainment,Movies subscriptions leisure and entertainment expenses
+8b1eb39a-83d8-47ec-9e51-f3987a8a2f4c,de,Unterhaltung,Filme Abonnements Freizeit und Unterhaltung
+07f2fb80-b2dc-463a-9277-083399290e21,en,Education,Courses books training and education expenses
+07f2fb80-b2dc-463a-9277-083399290e21,de,Bildung,Kurse Bücher Weiterbildung und Bildungsausgaben
+f7b74ab0-483a-47f0-a62b-4b7451d9c7a2,en,Insurance,Insurance premiums and related expenses
+f7b74ab0-483a-47f0-a62b-4b7451d9c7a2,de,Versicherung,Versicherungsbeiträge und zugehörige Ausgaben
+0eb40c6d-6f3f-4604-a343-261db6c42286,en,Other Expenses,Expenses that do not belong to another category
+0eb40c6d-6f3f-4604-a343-261db6c42286,de,Sonstige Ausgaben,Ausgaben die keiner anderen Kategorie zugeordnet sind
+41e4f117-b64a-40db-bcec-eb3143c80b2e,en,Salary,Salary and employment income
+41e4f117-b64a-40db-bcec-eb3143c80b2e,de,Gehalt,Gehalt und Einkommen aus Beschäftigung
+57fffcf7-eaf5-4698-aed7-3454ce8d1390,en,Bonus,Bonus and additional employment income
+57fffcf7-eaf5-4698-aed7-3454ce8d1390,de,Bonus,Bonus und zusätzliches Einkommen aus Beschäftigung
+d89697de-9e16-4398-8797-bcafbf0a9116,en,Freelance Income,Income from freelance or contract work
+d89697de-9e16-4398-8797-bcafbf0a9116,de,Freiberufliches Einkommen,Einkommen aus freiberuflicher oder vertraglicher Tätigkeit
+97b5783d-4c40-48ba-9ad6-f8699fc58e24,en,Investment Income,Income from investments interest or dividends
+97b5783d-4c40-48ba-9ad6-f8699fc58e24,de,Kapitaleinkünfte,Einkommen aus Investitionen Zinsen oder Dividenden
+c8d11d90-2595-4809-84ac-5d32b55a8dd2,en,Other Income,Income that does not belong to another category
+c8d11d90-2595-4809-84ac-5d32b55a8dd2,de,Sonstige Einnahmen,Einnahmen die keiner anderen Kategorie zugeordnet sind
