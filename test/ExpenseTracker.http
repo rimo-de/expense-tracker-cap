@@ -13,3 +13,23 @@ GET {{baseUrl}}/tracker/$metadata
 ### ------------------------------------------------------------------------
 # Get all Categories
 GET {{baseUrl}}/tracker/Categories
+
+### Create Category
+POST {{baseUrl}}/tracker/Categories
+Content-Type: application/json
+
+{
+  "name": "Transport",
+  "type": 2,
+  "description": "Public transport and fuel",
+  "icon": "sap-icon://car-rental",
+  "color": "#3F51B5",
+  "mandatory": false,
+  "active": true
+}
+
+### Get all Budgets
+GET {{baseUrl}}/tracker/Budgets
+
+### Get all Recurring Plans
+GET {{baseUrl}}/tracker/RecurringPlans
