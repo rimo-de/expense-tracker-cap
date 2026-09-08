@@ -2,7 +2,6 @@
 # Its value is set here.
 @baseUrl = http://localhost:4004
 
-
 ### ------------------------------------------------------------------------
 # Get Service Document
 GET {{baseUrl}}/tracker

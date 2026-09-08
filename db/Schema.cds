@@ -68,7 +68,7 @@ entity Transactions : cuid, managed {
     amount          : Decimal(15, 2) not null; //  Transaction amount
     currency        : Currency not null; // Currency code, e.g. EUR
     description     : String(255); // e.g. REWE groceries
-    status          : TransactionStatus;
+    status          : TransactionStatus default 'A';
     category        : Association to Categories not null;
     recurringPlan   : Association to RecurringPlans;
 }
