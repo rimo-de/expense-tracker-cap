@@ -1,1 +1,6 @@
-ID,name,description,amount,currency_code,category_ID,startDate,endDate,nextDueDate,active,createdAt,createdBy,modifiedAt,modifiedBy
+ID,name,description,amount,currency_code,category_ID,frequency,startDate,endDate,nextDueDate,active,createdAt,createdBy,modifiedAt,modifiedBy
+27775edd-d3e2-471d-874e-0dbf41ef3ff5,Apartment Rent,Monthly apartment rent,1200.00,EUR,bc4a21e7-47fe-4b52-8f6e-2ce1cfe7d114,1,2026-01-01,2027-12-31,2026-10-01,true,2026-09-08T17:15:42Z,rpoothineedi,2026-09-08T17:15:42Z,rpoothineedi
+b78d74e5-2731-4bb9-881c-faf14b0fad8e,Internet Contract,Monthly home internet subscription,49.99,EUR,e07a1b58-62fb-4a68-9a71-dedfe92ced31,1,2026-01-15,2027-12-31,2026-09-15,true,2026-09-08T17:15:42Z,rpoothineedi,2026-09-08T17:15:42Z,rpoothineedi
+2563465e-254d-440a-ac6a-04144f3fe59c,ARD Contribution,Quarterly broadcasting contribution,55.08,EUR,e07a1b58-62fb-4a68-9a71-dedfe92ced31,2,2026-01-15,2027-12-31,2026-10-15,true,2026-09-08T17:15:42Z,rpoothineedi,2026-09-08T17:15:42Z,rpoothineedi
+255f7b6f-cf96-49f4-9840-f513ca4f2202,Vehicle Tax,Annual vehicle tax,180.00,EUR,6e9f63f3-d94f-4729-8e4b-f2391f52f616,3,2026-03-01,2030-03-01,2027-03-01,true,2026-09-08T17:15:42Z,rpoothineedi,2026-09-08T17:15:42Z,rpoothineedi
+4b409dc6-7fef-4535-a2f3-23433f2edb54,Monthly Salary,Monthly employment salary,4200.00,EUR,41e4f117-b64a-40db-bcec-eb3143c80b2e,1,2026-01-28,2027-12-31,2026-09-28,true,2026-09-08T17:15:42Z,rpoothineedi,2026-09-08T17:15:42Z,rpoothineedi

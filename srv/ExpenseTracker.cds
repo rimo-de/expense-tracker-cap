@@ -4,4 +4,5 @@ service ExpenseTracker @(path: '/tracker') {
     entity Categories as projection on db.Categories;
     entity Budgets as projection on db.Budgets;
     entity RecurringPlans as projection on db.RecurringPlans;
+    entity Transactions as projection on db.Transactions;
 }
