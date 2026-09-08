@@ -44,7 +44,6 @@ entity Budgets : cuid, managed {
     category       : Association to Categories not null; // Category for which the budget is allocated
 }
 
-
 entity RecurringPlans : cuid, managed {
     name        : String(100) not null @mandatory; // e.g. Apartment Rent
     description : String(255); // Optional description
