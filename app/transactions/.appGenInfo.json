@@ -1,0 +1,28 @@
+{
+  "generationParameters": {
+    "generationDate": "Thu Sep 10 2026 07:43:56 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "Local CAP",
+    "metadataFilename": "",
+    "serviceUrl": "http://localhost:4004/tracker/",
+    "appName": "transactions",
+    "appTitle": "Expense Tracker - Transactions",
+    "appDescription": "Manage expense and income transactions",
+    "appNamespace": "expense.tracker",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.152.0",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.32.0",
+    "template": "List Report Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "Transactions"
+      }
+    ],
+    "launchText": "To launch the generated app, start your CAP project:  and navigate to the following location in your browser:\n\nhttp://localhost:4004/transactions/webapp/index.html"
+  }
+}
