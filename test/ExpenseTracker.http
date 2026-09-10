@@ -33,3 +33,59 @@ GET {{baseUrl}}/tracker/Budgets
 
 ### Get all Recurring Plans
 GET {{baseUrl}}/tracker/RecurringPlans
+
+### Get all Transactions
+GET {{baseUrl}}/tracker/Transactions
+
+### Create Transaction
+# @name createTransaction
+POST {{baseUrl}}/tracker/Transactions
+Content-Type: application/json
+
+{
+  "transactionDate": "2026-09-10",
+  "amount": 500.00,
+  "currency_code": "EUR",
+  "description": "Loan repayment",
+  "category_ID": "0eb40c6d-6f3f-4604-a343-261db6c42286"
+}
+
+### Read the newly created Transaction ID
+@transactionID = {{createTransaction.response.body.ID}}
+
+### Get specific Transaction
+GET {{baseUrl}}/tracker/Transactions({{transactionID}})
+
+### Update Transaction Status
+PATCH {{baseUrl}}/tracker/Transactions({{transactionID}})
+Content-Type: application/json
+
+{
+  "status": "C"
+}
+
+### Get specific Transaction
+GET {{baseUrl}}/tracker/Transactions({{transactionID}})
+
+### Filter completed Transactions
+GET {{baseUrl}}/tracker/Transactions?$filter=status eq 'C'
+
+### Sort newest Transactions first
+GET {{baseUrl}}/tracker/Transactions?$orderby=transactionDate desc
+
+### Get Transactions with Category
+GET {{baseUrl}}/tracker/Transactions?$expand=category
+
+### Select specific Transaction fields
+GET {{baseUrl}}/tracker/Transactions?$select=ID,transactionDate,amount,description,status
+
+### Delete Transaction
+DELETE {{baseUrl}}/tracker/Transactions({{transactionID}})
+
+### Verify Transaction is deleted
+GET {{baseUrl}}/tracker/Transactions({{transactionID}})
+
+
+
+
+
