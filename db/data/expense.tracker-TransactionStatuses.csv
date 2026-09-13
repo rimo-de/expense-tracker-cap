@@ -1,0 +1,4 @@
+code,name,criticality
+P,Pending,2
+C,Completed,3
+X,Cancelled,1

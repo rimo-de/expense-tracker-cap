@@ -8,21 +8,26 @@ using {
 } from '@sap/cds/common';
 
 // Custom Types : Enumerations
-type CategoryType      : Integer enum {
+type CategoryType : Integer enum {
     Income = 1;
     Expense = 2;
 }
 
-type Frequency         : Integer enum {
+type Frequency    : Integer enum {
     Monthly = 1;
     Quarterly = 2;
     Yearly = 3;
 }
 
-type TransactionStatus : String(1) enum {
-    Pending = 'A';
-    Completed = 'C';
-    Cancelled = 'X';
+//type TransactionStatus : String(1) enum {
+//    Pending = 'P';
+//    Completed = 'C';
+//    Cancelled = 'X';
+//}
+entity TransactionStatuses {
+    key code        : String(1);
+        name        : localized String(30) not null;
+        criticality : Integer;
 }
 
 entity Categories : cuid, managed {
@@ -68,7 +73,10 @@ entity Transactions : cuid, managed {
     amount          : Decimal(15, 2) not null; //  Transaction amount
     currency        : Currency not null; // Currency code, e.g. EUR
     description     : String(255); // e.g. REWE groceries
-    status          : TransactionStatus default 'A';
+    //  status          : TransactionStatus default 'P';
+    status_code     : String(1) not null default 'P';
+    status          : Association to TransactionStatuses
+                          on status.code = status_code;
     category        : Association to Categories not null;
     recurringPlan   : Association to RecurringPlans;
 }

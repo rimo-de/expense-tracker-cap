@@ -1,4 +1,4 @@
-ID,transactionDate,amount,currency_code,description,status,category_ID,recurringPlan_ID,createdAt,createdBy,modifiedAt,modifiedBy
+ID,transactionDate,amount,currency_code,description,status_code,category_ID,recurringPlan_ID,createdAt,createdBy,modifiedAt,modifiedBy
 db9be54d-ea57-452d-bbd6-e24ca797563c,2026-07-01,1200.00,EUR,July apartment rent,C,bc4a21e7-47fe-4b52-8f6e-2ce1cfe7d114,27775edd-d3e2-471d-874e-0dbf41ef3ff5,2026-09-08T17:15:42Z,rpoothineedi,2026-09-08T17:15:42Z,rpoothineedi
 6e7ac028-56c5-4a61-82a9-581e7e28e86b,2026-07-05,86.40,EUR,REWE groceries,C,0d87e9e6-9de2-4c76-b9c2-8fc6b582d8a1,,2026-09-08T17:15:42Z,rpoothineedi,2026-09-08T17:15:42Z,rpoothineedi
 1cec2a6d-48a3-4513-9879-a520631188ed,2026-07-14,49.99,EUR,Internet contract,C,e07a1b58-62fb-4a68-9a71-dedfe92ced31,b78d74e5-2731-4bb9-881c-faf14b0fad8e,2026-09-08T17:15:42Z,rpoothineedi,2026-09-08T17:15:42Z,rpoothineedi
