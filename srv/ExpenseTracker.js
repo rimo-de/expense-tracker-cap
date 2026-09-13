@@ -2,9 +2,7 @@ import cds from '@sap/cds';
 
 class ExpenseTracker extends cds.ApplicationService {
 
-    init() {
-        console.log('Event handler reached');
-        
+    init() {      
         const { Transactions } = this.entities;
 
         this.before(
@@ -16,10 +14,8 @@ class ExpenseTracker extends cds.ApplicationService {
         return super.init();
     }
 
-    async validateTransactionStatus(req) {
-        console.log('>>> Validation reached');
-        
-        const status_code = req.data;
+    async validateTransactionStatus(req) {       
+        const status_code = req.data.status_code;
 
         // Nothing to validate if status wasn't supplied
         if (!status_code) return;

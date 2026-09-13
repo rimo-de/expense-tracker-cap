@@ -197,7 +197,12 @@ annotate service.Transactions with {
                 ValueListProperty: 'icon',
             },
         ],
-    }
+    };
+};
+
+annotate service.Transactions with {
+    category @Common.Text: category.name;
+    category @Common.TextArrangement: #TextOnly;
 };
 
 annotate service.Transactions with {
