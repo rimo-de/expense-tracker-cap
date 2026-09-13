@@ -70,6 +70,11 @@ entity RecurringPlans : cuid, managed {
 
 entity Transactions : cuid, managed {
     transactionDate : Date not null @mandatory; // Date of income/expense
+    @mandatory
+    @assert.range: [
+        (0),
+        _
+    ]
     amount          : Decimal(15, 2) not null; //  Transaction amount
     currency        : Currency not null; // Currency code, e.g. EUR
     description     : String(255); // e.g. REWE groceries

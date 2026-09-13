@@ -64,6 +64,17 @@ Content-Type: application/json
   "status": "C"
 }
 
+### Invalid Transaction Status
+POST {{baseUrl}}/tracker/Transactions
+Content-Type: application/json
+
+{
+  "transactionDate": "2026-09-13",
+  "amount": 100.00,
+  "currency_code": "EUR",
+  "status_code": "Z"
+}
+
 ### Get specific Transaction
 GET {{baseUrl}}/tracker/Transactions({{transactionID}})
 
