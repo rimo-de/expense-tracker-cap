@@ -2,6 +2,8 @@
   "name": "ExpenseTracker",
   "version": "1.0.0",
   "dependencies": {
+    "@cap-js/mcp": "^1.4.3",
+    "@cap-js/mcp-server": "^0.0.5",
     "@sap/cds": "^9"
   },
   "devDependencies": {
@@ -10,7 +12,8 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-transactions": "cds watch --open expense.tracker.transactions/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "watch-transactions": "cds watch --open expense.tracker.transactions/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-categories": "cds watch --open expense.tracker.categories/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "cds": {
@@ -29,6 +32,7 @@
     "app/*"
   ],
   "sapux": [
-    "app/transactions"
+    "app/transactions",
+    "app/categories"
   ]
 }

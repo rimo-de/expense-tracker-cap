@@ -7,13 +7,12 @@ using {
     Currency
 } from '@sap/cds/common';
 
-// Custom Types : Enumerations
+/* // Custom Types : Enumerations
 type CategoryType : Integer enum {
     Income = 1;
     Expense = 2;
-}
-
-type Frequency    : Integer enum {
+} */
+type Frequency : Integer enum {
     Monthly = 1;
     Quarterly = 2;
     Yearly = 3;
@@ -30,9 +29,17 @@ entity TransactionStatuses {
         criticality : Integer;
 }
 
+entity CategoryTypes {
+    key code : Integer;
+        name : localized String(30) not null;
+}
+
 entity Categories : cuid, managed {
     name        : localized String(80) not null; // Category name, e.g. Food, Salary or Rent
-    type        : CategoryType  @assert.range: true  @mandatory; // Category type: Income or Expense
+    //  type        : CategoryType  @assert.range: true  @mandatory; // Category type: Income or Expense
+    type_code   : Integer not null;
+    type        : Association to CategoryTypes
+                      on type.code = type_code;
     description : localized String(255); // Optional detailed description
     icon        : String(50); // SAP icon name used in the UI
     color       : String(7); // Hex colour code, e.g. #FF5733
@@ -70,6 +77,7 @@ entity RecurringPlans : cuid, managed {
 
 entity Transactions : cuid, managed {
     transactionDate : Date not null @mandatory; // Date of income/expense
+
     @mandatory
     @assert.range: [
         (0),

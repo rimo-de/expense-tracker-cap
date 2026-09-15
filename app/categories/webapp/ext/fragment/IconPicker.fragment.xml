@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+
+    <Input
+        id="iconInput"
+        core:require="{
+            handler: 'expense/tracker/categories/ext/fragment/IconPicker'
+        }"
+        value="{icon}"
+        showValueHelp="true"
+        valueHelpRequest="handler.onOpenIconPicker"
+        width="100%" />
+
+</core:FragmentDefinition>
