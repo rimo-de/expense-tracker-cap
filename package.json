@@ -14,7 +14,8 @@
     "start": "cds-serve",
     "watch-transactions": "cds watch --open expense.tracker.transactions/index.html?sap-ui-xx-viewCache=false --livereload false",
     "watch-categories": "cds watch --open expense.tracker.categories/index.html?sap-ui-xx-viewCache=false --livereload false",
-    "watch-budget": "cds watch --open expense.tracker.budget/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "watch-budget": "cds watch --open expense.tracker.budget/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-recurringplans": "cds watch --open expense.tracker.recurringplans/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "cds": {
@@ -35,6 +36,7 @@
   "sapux": [
     "app/transactions",
     "app/categories",
-    "app/budget"
+    "app/budget",
+    "app/recurringplans"
   ]
 }

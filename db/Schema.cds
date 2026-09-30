@@ -12,10 +12,15 @@ type CategoryType : Integer enum {
     Income = 1;
     Expense = 2;
 } */
-type Frequency : Integer enum {
+/* type Frequency : Integer enum {
     Monthly = 1;
     Quarterly = 2;
     Yearly = 3;
+} */
+
+entity Frequencies {
+    key code : Integer;
+        name : localized String(30) not null;
 }
 
 //type TransactionStatus : String(1) enum {
@@ -63,16 +68,19 @@ entity Budgets : cuid, managed {
 }
 
 entity RecurringPlans : cuid, managed {
-    name        : String(100) not null @mandatory; // e.g. Apartment Rent
-    description : String(255); // Optional description
-    amount      : Decimal(15, 2) not null; // Amount for each occurrence
-    currency    : Currency not null; // Currency code, e.g. EUR
-    category    : Association to Categories not null;
-    frequency   : Frequency            @assert.range: true  @mandatory;
-    startDate   : Date not null        @mandatory; // Plan becomes valid from this date
-    endDate     : Date; // Optional
-    nextDueDate : Date not null; // Next transaction to be generated
-    active      : Boolean not null default true; // Enable/disable plan
+    name           : String(100) not null @mandatory; // e.g. Apartment Rent
+    description    : String(255); // Optional description
+    amount         : Decimal(15, 2) not null; // Amount for each occurrence
+    currency       : Currency not null; // Currency code, e.g. EUR
+    category       : Association to Categories not null;
+    //frequency   : Frequency            @assert.range: true  @mandatory;
+    frequency_code : Integer not null;
+    frequency      : Association to Frequencies
+                         on frequency.code = frequency_code;
+    startDate      : Date not null        @mandatory; // Plan becomes valid from this date
+    endDate        : Date; // Optional
+    nextDueDate    : Date not null; // Next transaction to be generated
+    active         : Boolean not null default true; // Enable/disable plan
 }
 
 entity Transactions : cuid, managed {

@@ -13,6 +13,7 @@ service ExpenseTracker @(path: '/tracker') {
     @odata.draft.enabled
     entity RecurringPlans      as projection on db.RecurringPlans;
 
+    entity Frequencies         as projection on db.Frequencies;
     entity TransactionStatuses as projection on db.TransactionStatuses;
 
     @odata.draft.enabled

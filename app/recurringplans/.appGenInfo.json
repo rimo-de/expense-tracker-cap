@@ -1,0 +1,28 @@
+{
+  "generationParameters": {
+    "generationDate": "Tue Sep 29 2026 06:31:40 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "Local CAP",
+    "metadataFilename": "",
+    "serviceUrl": "http://localhost:4004/tracker/",
+    "appName": "recurringplans",
+    "appTitle": "Recurring Plans",
+    "appDescription": "Expense Tracker - Recurring Plans",
+    "appNamespace": "expense.tracker",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.152.0",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.33.0",
+    "template": "List Report Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "RecurringPlans"
+      }
+    ],
+    "launchText": "To launch the generated app, start your CAP project:  and navigate to the following location in your browser:\n\nhttp://localhost:4004/expense.tracker.recurringplans/index.html"
+  }
+}
